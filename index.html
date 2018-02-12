@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets\css\reset.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets\css\bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+
+    <title>Crystals Collector</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-6 primaryHeader" id="gameName">
+                <h1 class='crystalGame'>Crystals Collector</h1>
+            </div>
+            <div class="col-sm-6" id="empty"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-6 instructions" id="gameInstructions">
+                <p>Game Instructions
+                    <br>
+                    <br>You will be given a random number at the start of the game.
+                    <br>
+                    <br>There are 4 crystals below. By clicking on a crystal, you will add a specific amount of points to your
+                    total score.
+                    <br>
+                    <br> You win the game by matching your score to the random number. If your score goes above the random number,
+                    you lose!
+                    <br>
+                    <br>The value of each crystal is hidden from you, until you click on it.
+                    <br>
+                    <br>Each time the game starts, the value of each crystal will change. The value of the target number will
+                    also change.
+                    <br>
+                </p>
+            </div>
+            <div class="col-sm-6" id="empty"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-4 randNumDis" id="randomNumber">
+                <span class="randNumDiv">Don't go over this number!</span>
+                <button id="gameNum" class="randNumDis btn btn-large btn-default normal-button">Click To Begin!</button>
+            </div>
+            <div class="col-sm-2 lossesWins" id="winsLosses">
+                <h3>Wins:</h3>
+                <span id="gameWins" class="wins">987654321</span>
+                <h3>Losses:</h3>
+                <span id="gameLosses" class="losses">123456789
+                    <br>
+                    <br>
+                </span>
+            </div>
+            <div class="col-sm-8" id="empty"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="crystalButton col-sm-1" id="crystal1">
+                <button id="crystalOne" class="btn btn-large btn-default normal-button crystal1">
+                    <img src='assets\images\crystal1.png' alt='Crystal One'>
+                </button>
+            </div>
+            <div id='crystalTwo' class="crystalButton col-sm-1" id="crystal2">
+                <button id='crystalTwo' class="btn btn-large btn-default normal-button">
+                    <img src='assets\images\crystal2.png' alt='Crystal Two'>
+                </button>
+            </div>
+            <div class="crystalButton col-sm-1" id="crystal3">
+                <button id='crystalThree' class="btn btn-large btn-default normal-button">
+                    <img src="assets\images\crystal3.png" alt="Crystal Three">
+                </button>
+            </div>
+            <div class="crystalButton col-sm-1" id="crystal4">
+                <button id='crystalFour' class="btn btn-large btn-default normal-button">
+                    <img src="assets\images\crystal4.png" alt="Crystal 4">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-6 scoreTotal" id="totalScore">
+                <h3 class="scoreSum">Total Score</h3>
+                <span class="scoreDisplay" id='yourScore'>0</span>
+            </div>
+            <div class="col-sm-6" id="empty"></div>
+        </div>
+    </div>
+    <footer class="footer">Thanks for Playing!
+        <br>
+        <br>Copyright 2018 Jason Reeves
+        <br>
+        <br>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets\javascript\game.js"></script>
+</body>
+<!-- //The player will have to guess the answer, just like in Hangman. This time, though, the player will guess with numbers instead of letters. 
+Here's how the app works:
+
+
+
+There will be four crystals displayed as buttons on the page.
+The player will be shown a random number at the start of the game.
+
+When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+
+
+Your game will hide this amount until the player clicks a crystal.
+When they do click one, update the player's score counter.
+
+
+The player wins if their total score matches the random number from the beginning of the game.
+The player loses if their score goes above the random number.
+
+The game restarts whenever the player wins or loses.
+
+
+When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+
+
+The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+
+
+
+Option 1 Game design notes
+
+
+The random number shown at the start of the game should be between 19 - 120.
+Each crystal should have a random hidden value between 1 - 12. -->
+
+</html>
